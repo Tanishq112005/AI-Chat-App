@@ -1,0 +1,32 @@
+.chattingArea {
+    flex-grow: 1;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.results {
+ 
+    flex-grow: 1; 
+    overflow-y: auto; 
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Note: Once you add real chat messages, you'll want to change this to flex-start so messages start at the top! */
+    color: white;
+}
+
+.inputBox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   /* Add some padding so the input box doesn't hit the very bottom edge of the monitor */
+   padding-bottom: 2rem; 
+   padding-top: 1rem;
+   
+   /* Prevents the input box from shrinking if the results area gets full */
+   flex-shrink: 0; 
+}

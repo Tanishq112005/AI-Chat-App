@@ -1,0 +1,70 @@
+.sideBar {
+    --background-color : #1F1F1F;
+    --text-color : #E3E3DE;
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+     height: 98% ; 
+     width : 260px; 
+     border-radius: 20px;
+     margin-left: 10px;
+     background-color: var(--background-color);
+     transition: width ease 1sec;
+}
+
+.collapsedSideBar {
+    width : 70px; 
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 100px ; 
+    padding-op: 0.5rem ;  
+    padding-bottom: 1rem ; 
+    align-items: center;
+
+}
+
+.logoName{
+    color: var(--text-color) ;
+    padding-left: 20px;
+    font-size: xx-large;
+
+}
+
+.recentChats{
+    display: flex;
+    flex-direction: column;
+    gap : 8px ; 
+    padding-top: 15px;
+}
+
+.textRecentChat{
+   color: #7A8D96;
+   padding-left: 4px;
+}
+
+
+.collapsedSideBar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;       /* Keeps the icon away from the exact edge of the screen */
+    align-items: center; /* Centers the icon */
+}
+
+
+.hamburgerButton {
+    background-color: transparent;
+    color: var(--text-color, #E3E3DE);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.hamburgerButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+

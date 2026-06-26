@@ -1,0 +1,77 @@
+
+.chatBoxInputComponent {
+    
+    /* global colours and order define here */ 
+   --chat-bg : #1E1F20 ;  
+   --text-color : #f3f7f7; 
+   --submit-button-color : #2F48A1 ; 
+    
+    /* component desiging part */
+    background-color: var(--chat-bg);
+    width: 40rem;
+    height: 3rem;
+    border-radius: 20px;
+    padding : 1em 1em 1em 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap : 1em ; 
+    
+}
+
+
+.chatBoxInputComponent:hover {
+    
+    transform: translateY(-1px);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.writingSection {
+    color : var(--text-color);
+    background-color: transparent;
+    text-align: left ; 
+    border: none;
+    flex-grow: 1;
+    outline: none;
+    transition: font-size 0.015s ease ; 
+    font-size: small ; 
+
+}
+
+.writingSection:focus{
+    font-size:medium
+
+}
+
+
+.submitButton{
+    height : 2rem;
+    width : 5rem ; 
+    background-color: var(--submit-button-color);
+    color : var(--text-color) ; 
+    margin: auto auto auto auto;
+    border-radius: 10px;
+    border: none ; 
+    outline: none;
+  
+}
+
+.submitButton:hover{
+    color: #b3baba ;
+}
+
+
+.modelSelector{
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    outline : none ; 
+}
+
+.modelSelector option {
+    background-color: var(--chat-bg); 
+    color: var(--text-color);        
+}
